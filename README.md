@@ -6,8 +6,8 @@ This project is a beautiful and responsive web application built to explore coun
 
 ## 🔗 Live Preview
 
-* 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Countries-Explorer)
-* 🌐 **Live Site URL**: [View it in action](https://countries-explorer.vercel.app/)
+* 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Flags-and-Facts)
+* 🌐 **Live Site URL**: [View it in action](https://flags-and-facts.vercel.app/)
 
 ---
 
