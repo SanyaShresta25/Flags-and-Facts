@@ -1,10 +1,7 @@
-// script.js
 
-// Global variables
 let allCountries = [];
 let filteredCountries = [];
 
-// DOM elements
 const searchInput = document.getElementById('searchInput');
 const countriesGrid = document.getElementById('countriesGrid');
 const loading = document.getElementById('loading');
@@ -14,7 +11,7 @@ const retryBtn = document.getElementById('retryBtn');
 // API endpoint
 const API_URL = 'https://api.sampleapis.com/countries/countries';
 
-// Utility Functions
+
 const formatPopulation = population => {
     if (population >= 1000000) return (population / 1000000).toFixed(1) + 'M';
     if (population >= 1000) return (population / 1000).toFixed(0) + 'K';
@@ -66,7 +63,7 @@ const getFastestCountryData = urls => {
         });
 };
 
-// UI Functions
+
 const showLoading = () => {
     loading.style.display = 'block';
     countriesGrid.style.display = 'none';
@@ -171,7 +168,6 @@ const debouncedFilter = debounce(filterCountries, 300);
 searchInput.addEventListener('input', debouncedFilter);
 retryBtn.addEventListener('click', loadAndProcessCountries);
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Countries App initialized');
     loadAndProcessCountries();

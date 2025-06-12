@@ -82,7 +82,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     transition: transform 0.3s ease;
-    max-width: 100%; /* Ensures card fits column */
+    max-width: 100%; 
+     min-height: 360px;
 }
 
 .country-card:hover {
@@ -116,7 +117,7 @@ body {
     font-weight: 600;
 }
 
-/* ✅ Mobile Responsiveness */
+/*  Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .top-bar {
         padding: 20px;
@@ -132,6 +133,7 @@ body {
 
     .countries-grid {
         gap: 20px;
+          justify-content: center;
     }
 
     #searchInput {
